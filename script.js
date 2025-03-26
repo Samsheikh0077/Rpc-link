@@ -9,20 +9,20 @@ document.getElementById("addRpcBtn").addEventListener("click", async () => {
             await window.ethereum.request({
                 method: "wallet_addEthereumChain",
                 params: [{
-                    chainId: "0x38", // BSC Chain ID
-                    chainName: "BSC Custom RPC",
-                    rpcUrls: ["https://virtual.mainnet.rpc.tenderly.co/f945523a-2708-47cd-b1f4-a1dc19a882a7"],
+                    chainId: "0x1", // ✅ Ethereum Mainnet Chain ID
+                    chainName: "Ethereum Mainnet",
+                    rpcUrls: ["https://virtual.mainnet.rpc.tenderly.co/f945523a-2708-47cd-b1f4-a1dc19a882a7"], // ✅ Aapka Custom RPC for ETH
                     nativeCurrency: {
-                        name: "BNB",
-                        symbol: "BNB",
+                        name: "Ether",
+                        symbol: "ETH",
                         decimals: 18
                     },
-                    blockExplorerUrls: ["https://bscscan.com/"]
+                    blockExplorerUrls: ["https://etherscan.io/"] // ✅ Ethereum Explorer
                 }]
             });
 
             document.getElementById("status").innerText = "✅ RPC Added Successfully!";
-            console.log("✅ Custom RPC added successfully in Trust Wallet!");
+            console.log("✅ Custom Ethereum RPC added successfully in Trust Wallet & MetaMask!");
         } catch (error) {
             console.error("❌ Error Adding RPC:", error);
             document.getElementById("status").innerText = "❌ Error: " + error.message;
