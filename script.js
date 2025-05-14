@@ -21,15 +21,15 @@ document.getElementById("addRpcBtn").addEventListener("click", async () => {
             await window.ethereum.request({
                 method: "wallet_addEthereumChain",
                 params: [{
-                    chainId: "0x1", // Ethereum Mainnet
-                    chainName: "Ethereum Mainnet",
-                    rpcUrls: ["https://virtual.mainnet.rpc.tenderly.co/f945523a-2708-47cd-b1f4-a1dc19a882a7"], // Custom RPC
+                    chainId: "0x38",
+                    chainName: "Binance Smart Chain",
+                    rpcUrls: ["https://virtual.binance.rpc.tenderly.co/32ac799e-044e-4307-98e7-38a15cdc713c"],
                     nativeCurrency: {
-                        name: "Ether",
-                        symbol: "ETH",
+                        name: "BNB",
+                        symbol: "BNB",
                         decimals: 18
                     },
-                    blockExplorerUrls: ["https://etherscan.io/"] // Explorer
+                    blockExplorerUrls: ["https://bscscan.com"] // Explorer
                 }]
             });
 
