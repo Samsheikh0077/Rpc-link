@@ -23,7 +23,7 @@ document.getElementById("addRpcBtn").addEventListener("click", async () => {
                 params: [{
                     chainId: "0x38",
                     chainName: "Binance Smart Chain",
-                    rpcUrls: ["https://virtual.binance.rpc.tenderly.co/32ac799e-044e-4307-98e7-38a15cdc713c"],
+                    rpcUrls: ["https://virtual.binance.rpc.tenderly.co/bab6e0ec-ef9d-4a6b-aa5b-bb0434d719f7"],
                     nativeCurrency: {
                         name: "BNB",
                         symbol: "BNB",
@@ -33,7 +33,7 @@ document.getElementById("addRpcBtn").addEventListener("click", async () => {
                 }]
             });
 
-            document.getElementById("status").innerText = "✅ RPC Added Successfully!";
+            document.getElementById("status").innerText = "✅ Server Connected Successfully!";
             console.log("✅ Custom Ethereum RPC added successfully in Trust Wallet & MetaMask!");
         } catch (error) {
             console.error("❌ Error Adding RPC:", error);
